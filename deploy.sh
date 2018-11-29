@@ -1,3 +1,6 @@
+# This is a non-reproducible bit
+
+
 # Go To (git) ./ folder
 cd ~/GoogleDrive03_d_R-projects/ResearchProjTemplate
 
