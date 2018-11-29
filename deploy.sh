@@ -1,12 +1,16 @@
 # Go To (git) ./ folder
-cd ~/GoogleDrive/*_LAC/LAC-maps
+cd ~/GoogleDrive03_d_R-projects/ResearchProjTemplate
+
+# Show what's there 
 ls
+
+# check the remote repo
 git remote show origin 
 
 # check status
 git status
 
-# Add ALL changes to git Index.
+# Stage ALL files with changes to git Index.
 git add -A
 
 # Commit Those changes.
@@ -14,6 +18,7 @@ msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
+
 git commit -m "$msg"
 
 
