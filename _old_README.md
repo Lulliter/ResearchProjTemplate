@@ -1,2 +1,0 @@
-# ResearchProjTemplate
-Research Project Template
