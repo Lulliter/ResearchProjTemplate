@@ -12,9 +12,6 @@
 	## source(paste0(root,"/StartSession.R"))
 	# getwd()
 
-	#======  Restart R Session
-	#.rs.restartR()
-
 	#======  Clean up the environment
 	# This deletes the workspace file. 
 	unlink(".RData") 
@@ -23,8 +20,12 @@
 	# Clear console (identical to Ctrl+L)
 	cat("\014") 
 	# Clean workspace
-	rm(list=ls())
-
+	rm(list=ls()) # Watch out bc It doesn;t detach libraries
+	
+	#======  Restart R Session
+	.rs.restartR() # (better)
+	
+	
 ################################################  
 ##		Load Packages (SIMPLiciter!) 
 ################################################  
